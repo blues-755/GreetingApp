@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GreetingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GreetingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserClearance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUserClearance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GreetingTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GreetingTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestUserClearance.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestUserClearance.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CountGreetedUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CountGreetedUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GreetingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GreetingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/greet-in-java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestUserClearance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestUserClearance.class" afterDir="false" />
-    </list>
+    <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +87,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GreetingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-414">
+            <state relative-caret-position="-463">
               <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
@@ -184,7 +163,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="66" />
     <option name="y" value="24" />
     <option name="width" value="651" />
@@ -354,9 +333,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 48m 09s.xml">
-      <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 48m 29s.xml">
       <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
     </history-entry>
@@ -384,6 +360,9 @@
     <history-entry file="GreetingTest_testGreeting - 2019.04.12 at 16h 05m 15s.xml">
       <configuration name="GreetingTest.testGreeting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GreetingTest_testIfICanRemoveUsers - 2019.04.12 at 16h 08m 31s.xml">
+      <configuration name="GreetingTest.testIfICanRemoveUsers" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +374,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15697211" />
@@ -408,7 +387,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15994021" />
-      <window_info active="true" anchor="bottom" x="65" y="24" width="1301" height="744" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.79820627" />
+      <window_info anchor="bottom" x="65" y="24" width="1301" height="744" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.79820627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.044843048" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -614,7 +593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GreetingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
+        <state relative-caret-position="-463">
           <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
