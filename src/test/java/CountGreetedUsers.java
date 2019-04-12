@@ -11,8 +11,9 @@ public class CountGreetedUsers {
         logic.greetPerson("Lunga", "Mholo");
         logic.greetPerson("Thembela", "Hello");
         logic.greetPerson("Ovayo", "Sawubona");
-
+        logic.counterAll();
         assertEquals(logic.greetedList(), logic.greetedList());
+        System.out.println(logic.greetedList());
     }
     @Test
     public void testNoUsersGreeted(){
