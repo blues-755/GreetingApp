@@ -1,0 +1,20 @@
+
+    //GreetingTest
+    // test if you can greet a user
+    // test if you can greet with def......
+
+
+    // test greet counter......CHECK
+    // test for greet counter increment.....CHECK
+
+    // test for greeted users.....CHECK
+    // test for greeted no users...........CHECK
+    // test for greeted + name......CHECK
+    //test for greeted + name - if name doesn't exist.....CHECK
+
+    // clear - test if it clears.....CHECK
+    // greetLogic.clear()
+    //assertE(greetLogic.counter(), 0)
+    // if it clear certain user
+
+    //counter - return number of users greeted......CHECK
