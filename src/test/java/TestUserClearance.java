@@ -9,19 +9,19 @@ public class TestUserClearance {
 
     @Test
     public void testUserClearance(){
-//        clearLogi.greetPerson("Lunga");
-//        clearLogi.greetPerson("Ovayo");
-//        clearLogi.greetPerson("Thembela");
+        clearLogi.greetPerson("Lunga", "Mholo");
+        clearLogi.greetPerson("Ovayo", "Hello");
+        clearLogi.greetPerson("Thembela", "Hello");
         assertEquals(clearLogi.clearName("Lunga"), 1);
 
     }
 
     @Test
     public void testShouldRemoveAll(){
-//        clearLogi.greetPerson("Ovayo");
-//        clearLogi.greetPerson("Lunga");
-//        clearLogi.greetPerson("Tshila");
-//        clearLogi.clear();
-//        assertEquals(clearLogi.counterAll(), 0);
+        clearLogi.greetPerson("Ovayo", "Hello");
+        clearLogi.greetPerson("Lunga", "Mholo");
+        clearLogi.greetPerson("Tshila", "Mholo");
+        clearLogi.clear();
+        assertEquals(clearLogi.counterAll(), 0);
     }
 }

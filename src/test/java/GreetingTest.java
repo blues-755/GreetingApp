@@ -7,15 +7,15 @@ public class GreetingTest {
     @Test
     public void testGreetingWithDefaultLanguage(){
         GreetLogic in = new GreetLogic();
-
-
         assertEquals(in.greetPerson("Lunga", null), "Mholo Lunga");
         assertEquals(in.greetPerson("Lunga", "english"), "Mholo Lunga");
     }
 
     @Test
     public void testIfICanGreetAUser(){
-
+        GreetLogic in = new GreetLogic();
+        in.greetPerson("Lunga", "Mholo");
+        assertEquals(in.greetPerson("Lunga", "ENGLISH"), "Hello Lunga");
     }
 
     @Test

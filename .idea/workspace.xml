@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="" />
+    <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GreetingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GreetingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserClearance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUserClearance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GreetingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GreetingTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -63,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CountGreetedUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="30" column="42" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="276">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestUserClearance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="24" column="49" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="506">
+              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +93,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/GreetingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-463">
-              <caret column="28" selection-start-column="28" selection-end-column="28" />
+            <state relative-caret-position="713">
+              <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Test classes Logic">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -148,11 +157,11 @@
         <option value="$PROJECT_DIR$/src/test/java/Test classes Logic" />
         <option value="$PROJECT_DIR$/src/test/java/Tester.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestUserClearance.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/Languages.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java" />
         <option value="$PROJECT_DIR$/src/test/java/GreetingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestUserClearance.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" />
       </list>
     </option>
   </component>
@@ -163,7 +172,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="66" />
     <option name="y" value="24" />
     <option name="width" value="651" />
@@ -250,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GreetingTest.testIfICanRemoveUsers">
+  <component name="RunManager" selected="JUnit.CountGreetedUsers.testCountForGreetedName">
     <configuration name="CountGreetedUsers.testCountForGreetedName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <option name="PACKAGE_NAME" value="" />
@@ -271,11 +280,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreetingTest.testGreetingWithDefaultLanguage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GreetingTest.testIfICanGreetAUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GreetingTest" />
-      <option name="METHOD_NAME" value="testGreetingWithDefaultLanguage" />
+      <option name="METHOD_NAME" value="testIfICanGreetAUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,11 +300,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUserClearance.testUserClearance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserClearance.testShouldRemoveAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="greet-in-java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestUserClearance" />
-      <option name="METHOD_NAME" value="testUserClearance" />
+      <option name="METHOD_NAME" value="testShouldRemoveAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -303,11 +312,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountGreetedUsers.testCountForGreetedName" />
+        <item itemvalue="JUnit.TestUserClearance.testShouldRemoveAll" />
+        <item itemvalue="JUnit.GreetingTest.testIfICanGreetAUser" />
         <item itemvalue="JUnit.GreetingTest.testIfICanRemoveUsers" />
         <item itemvalue="JUnit.GreetingTest.testGreeting" />
-        <item itemvalue="JUnit.GreetingTest.testGreetingWithDefaultLanguage" />
-        <item itemvalue="JUnit.CountGreetedUsers.testCountForGreetedName" />
-        <item itemvalue="JUnit.TestUserClearance.testUserClearance" />
       </list>
     </recent_temporary>
   </component>
@@ -333,18 +342,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 48m 29s.xml">
-      <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetingTest_testGreeting - 2019.04.12 at 15h 48m 42s.xml">
-      <configuration name="GreetingTest.testGreeting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 50m 07s.xml">
-      <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 53m 39s.xml">
-      <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GreetingTest_testGreetingWithDefaultLanguage - 2019.04.12 at 15h 54m 56s.xml">
       <configuration name="GreetingTest.testGreetingWithDefaultLanguage" configurationId="JUnit" />
     </history-entry>
@@ -363,6 +360,18 @@
     <history-entry file="GreetingTest_testIfICanRemoveUsers - 2019.04.12 at 16h 08m 31s.xml">
       <configuration name="GreetingTest.testIfICanRemoveUsers" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GreetingTest_testIfICanGreetAUser - 2019.04.12 at 16h 21m 11s.xml">
+      <configuration name="GreetingTest.testIfICanGreetAUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GreetingTest_testIfICanGreetAUser - 2019.04.12 at 16h 24m 57s.xml">
+      <configuration name="GreetingTest.testIfICanGreetAUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestUserClearance_testShouldRemoveAll - 2019.04.12 at 16h 26m 58s.xml">
+      <configuration name="TestUserClearance.testShouldRemoveAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountGreetedUsers_testCountForGreetedName - 2019.04.12 at 16h 28m 36s.xml">
+      <configuration name="CountGreetedUsers.testCountForGreetedName" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,7 +383,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15697211" />
@@ -387,7 +396,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.15994021" />
-      <window_info anchor="bottom" x="65" y="24" width="1301" height="744" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.79820627" />
+      <window_info active="true" anchor="bottom" x="65" y="24" width="1301" height="744" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.79820627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.044843048" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -532,34 +541,14 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Test classes Logic">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestUserClearance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="24" column="49" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CountGreetedUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -591,10 +580,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CountGreetedUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestUserClearance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GreetingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        <state relative-caret-position="713">
+          <caret line="37" column="51" lean-forward="true" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
