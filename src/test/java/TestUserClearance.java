@@ -13,7 +13,6 @@ public class TestUserClearance {
         clearLogi.greetPerson("Ovayo", "Hello");
         clearLogi.greetPerson("Thembela", "Hello");
         assertEquals(clearLogi.clearName("Lunga"), 1);
-
     }
 
     @Test

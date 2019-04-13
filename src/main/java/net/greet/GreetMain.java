@@ -20,7 +20,6 @@ public class GreetMain {
                 if (tab[ 0 ].equalsIgnoreCase("greet") && tab.length == 2) {
                     String name = tab[ 1 ].toUpperCase();
                     String langType = "ISIXHOSA";
-//                    Languages.valueOf(langType);
                    greetLogic.greetPerson(name, langType);
                     System.out.println(Languages.valueOf(langType).getUsername(name));
                 }
@@ -89,7 +88,6 @@ public class GreetMain {
                 else{
                     System.out.println("Invalid option please type again");
                 }
-                //
             }catch (IllegalArgumentException e){
                 System.out.println("OOPS...ERROR OCCURRED\n" + "Type 'help' to view list of valid commands");
             }
