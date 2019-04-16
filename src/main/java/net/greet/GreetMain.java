@@ -40,7 +40,6 @@ public class GreetMain {
                         System.out.println(greetLogic.usernameMap);
                     }
                 }
-
                 //CHECKING THE GREETED USERNAME
                 else if(tab.length > 2){
                     String name = tab[ 1 ];
