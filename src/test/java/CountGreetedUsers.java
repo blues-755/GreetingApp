@@ -21,6 +21,7 @@ public class CountGreetedUsers {
         noGreet.greetedList();
         assertEquals(noGreet.greetedList(), noGreet.greetedList());
         System.out.println("Greeted Users: " + noGreet.counterAll());
+        System.out.println(noGreet.greetedList());
     }
 
     @Test
@@ -31,5 +32,6 @@ public class CountGreetedUsers {
         greetLogic.greetPerson("Thera", "Mholo");
         greetLogic.greetPerson("Ovayo", "Hello");
         assertEquals(greetLogic.counter("Ovayo"), 1);
+        System.out.println(greetLogic.counter("Ovayo"));
     }
 }

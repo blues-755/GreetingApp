@@ -16,7 +16,7 @@ public class TestUserClearance {
     }
 
     @Test
-    public void testShouldRemoveAll(){
+    public void testShouldRemoveAllUsers(){
         clearLogi.greetPerson("Ovayo", "Hello");
         clearLogi.greetPerson("Lunga", "Mholo");
         clearLogi.greetPerson("Tshila", "Mholo");

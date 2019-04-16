@@ -9,11 +9,11 @@ public class GreetingTest {
         GreetLogic in = new GreetLogic();
         assertEquals(in.greetPerson("Lunga", null), "Mholo Lunga");
         assertEquals(in.greetPerson("Lunga", "english"), "Mholo Lunga");
+        System.out.println(in.greetPerson("Lunga", null));
     }
     @Test
     public void testIfICanGreetAUser(){
         GreetLogic in = new GreetLogic();
-        in.greetPerson("Lunga", "Mholo");
         assertEquals(in.greetPerson("Lunga", "ENGLISH"), "Hello Lunga");
     }
     @Test
