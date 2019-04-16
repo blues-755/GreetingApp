@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: GreetingTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in GreetingTest
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in GreetingTest
+testGreetingWithDefaultLanguage  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant net.greet.Languages.english
+	at GreetingTest.testGreetingWithDefaultLanguage(GreetingTest.java:11)
+
+testIfICanRemoveUsers  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant net.greet.Languages.Hello
+	at GreetingTest.testIfICanRemoveUsers(GreetingTest.java:33)
+
+testGreeting  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant net.greet.Languages.Mholo
+	at GreetingTest.testGreeting(GreetingTest.java:22)
+
+testIfICanGreetAUser  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant net.greet.Languages.Mholo
+	at GreetingTest.testIfICanGreetAUser(GreetingTest.java:16)
+

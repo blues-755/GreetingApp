@@ -29,7 +29,7 @@ public class GreetMain {
                     String name = tab[1].toUpperCase();
                     String langType = tab[2].toUpperCase();
                     greetLogic.greetPerson(name, langType);
-
+                    System.out.println(Languages.valueOf(langType).getUsername(name));
                 }
 
                 //GREETED LIST OF USERS and GREETED FOR A SINGLE USER
@@ -79,7 +79,7 @@ public class GreetMain {
                 }
 
                 //CLEARS A SPECIFIED USER NAME FROM THE SYSTEM
-                else if (tab[ 0 ].equalsIgnoreCase("clear")) {
+                else if (tab[ 0 ].equalsIgnoreCase("clear") && tab.length == 2) {
                     String name = tab[ 1 ];
                     greetLogic.clearName(name);
                 }

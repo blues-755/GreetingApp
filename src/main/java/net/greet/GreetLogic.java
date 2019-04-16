@@ -26,8 +26,6 @@ public class GreetLogic {
             return Languages.valueOf(langType).getUsername(name);
         } catch (NullPointerException e) {
            return Languages.valueOf("ISIXHOSA").getUsername(name);
-        } catch (IllegalArgumentException e) {
-            return Languages.valueOf("ISIXHOSA").getUsername(name);
         }
     }
 
@@ -51,8 +49,8 @@ public class GreetLogic {
     public Integer clearName(String name){
         return usernameMap.remove(name);
     }
+
     public int counterAll(){
-        System.out.println();
         System.out.println(usernameMap.size() + " user(s) in the list");
         return usernameMap.size();
     }
