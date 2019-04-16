@@ -27,8 +27,10 @@ public class GreetLogic {
         } catch (NullPointerException e) {
            return Languages.valueOf("ISIXHOSA").getUsername(name);
         }
+        catch (IllegalArgumentException e) {
+            return Languages.valueOf("ISIXHOSA").getUsername(name);
+        }
     }
-
     public void greetedName(String name){
         System.out.println(usernameMap.get(name));
     }
