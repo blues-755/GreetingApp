@@ -1,4 +1,5 @@
 import net.greet.GreetLogic;
+import net.greet.Languages;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,31 +8,37 @@ public class GreetingTest {
     @Test
     public void testGreetingWithDefaultLanguage(){
         GreetLogic in = new GreetLogic();
-        assertEquals(in.greetPerson("Lunga", null), "Mholo Lunga");
-        assertEquals(in.greetPerson("Lunga", "english"), "Mholo Lunga");
-        System.out.println(in.greetPerson("Lunga", null));
+        in.greetPerson("Lunga", null);
+        assertEquals(Languages.valueOf("ISIXHOSA").getLang() + "Lunga", in.greetPerson("Lunga", null));
+
+        assertEquals("Hello, Lunga", in.greetPerson("Lunga", "ENGLISH"));
+        assertEquals("Mholo, Lunga", in.greetPerson("Lunga", "ISIXHOSA"));
+        assertEquals("Mholo, Lunga", in.greetPerson("Lunga", "ZULU"));
+
+        assertEquals(1, in.greetedList().size());
+        in.greetPerson("Yan", "ISIZULU");
+        assertEquals(2, in.greetedList().size());
     }
     @Test
     public void testIfICanGreetAUser(){
         GreetLogic in = new GreetLogic();
-        assertEquals(in.greetPerson("Lunga", "ENGLISH"), "Hello Lunga");
+        in.greetPerson("Ovayo","ISIZULU");
+        assertEquals(in.greetPerson("Ovayo", "Sawbona"),"Mholo, Ovayo");
     }
     @Test
     public void testGreeting() {
         GreetLogic gLogic = new GreetLogic();
-        gLogic.greetPerson("Lunga", "Mholo");
-        gLogic.greetPerson("Lunga", "Hello");
-        gLogic.greetPerson("Lunga", "Sawbona");
-        gLogic.greetPerson("Lunga", "Hello");
-        gLogic.greetPerson("Tshila", "Hello");
-        assertEquals(gLogic.greetedList(), gLogic.greetedList());
+        gLogic.greetPerson("Lunga", "ISIXHOSA");
+        gLogic.greetPerson("Thembela", "ENGLISH");
+        gLogic.greetPerson("Ovayo", "ISIZULU");
+        assertEquals(gLogic.greetedList().size(), 3);
     }
 
     @Test
     public void testIfICanRemoveUsers() {
         GreetLogic gLogic = new GreetLogic();
-        gLogic.greetPerson("Lunga", "Hello");
-        gLogic.greetPerson("Lunga", "Sawbona");
-        assertEquals(gLogic.clearName("Lunga"), 2);
+        gLogic.greetPerson("Lunga", "ENGLISH");
+        gLogic.greetPerson("Thembela", "ISIXHOSA");
+        assertEquals(gLogic.clearName("Lunga"), 1);
     }
 }

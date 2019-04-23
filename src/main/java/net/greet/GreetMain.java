@@ -1,6 +1,4 @@
 package net.greet;
-
-
 import java.util.Scanner;
 
 public class GreetMain {
@@ -19,46 +17,51 @@ public class GreetMain {
 
                 if (tab[ 0 ].equalsIgnoreCase("greet") && tab.length == 2) {
                     String name = tab[ 1 ].toUpperCase();
-                    String langType = "ISIXHOSA";
-                   greetLogic.greetPerson(name, langType);
-                    System.out.println(Languages.valueOf(langType).getUsername(name));
+                    System.out.println(greetLogic.greetPerson(name, "ISIXHOSA"));
                 }
 
                 //GREET COMMAND FOLLOWED BY USER NAME AND LANGUAGE
                 else if(tab[0].equalsIgnoreCase("greet") && tab.length == 3){
                     String name = tab[1].toUpperCase();
-                    String langType = tab[2].toUpperCase();
-                    greetLogic.greetPerson(name, langType);
-                    System.out.println(Languages.valueOf(langType).getUsername(name));
+                    String greetType = tab[2].toUpperCase();
+                    greetLogic.greetPerson(name, greetType);
+                    System.out.println(Languages.valueOf(greetType).getLang() + name);
                 }
 
                 //GREETED LIST OF USERS and GREETED FOR A SINGLE USER
                 else if(tab[ 0 ].equalsIgnoreCase("greeted")){
                     if(tab.length == 2){
+                        String name = tab[ 1 ].toUpperCase();
                         greetLogic.greetedName(tab[1].toUpperCase());
+                        System.out.println(greetLogic.greetedName(name));
                     }else {
-                        System.out.println(greetLogic.usernameMap);
+                        System.out.println(greetLogic.greetedList());
                     }
                 }
+
                 //CHECKING THE GREETED USERNAME
                 else if(tab.length > 2){
                     String name = tab[ 1 ];
-                    String langType = tab[ 2 ].toUpperCase();
-                    Languages.valueOf(langType);
-                    System.out.println(Languages.valueOf(langType).getUsername(name));
+                    String greetLang = tab[ 2 ].toUpperCase();
+                    Languages.valueOf(greetLang);
+                    System.out.println(Languages.valueOf(greetLang).getLang() + name);
                 }
 
                 //COUNTER FOR ALL USER NAMES IN THE SYSTEM
                 else if ("counter".equalsIgnoreCase(command)) {
-                    greetLogic.counterAll();
+                    System.out.println(greetLogic.counterAll() + " user(s) in the list");
                 }
 
                 //COUNTER FOR SPECIFIED USER NAME
                 else if (tab[0].equalsIgnoreCase("counter")) {
                     console.nextLine();
                     String name = tab[1].toUpperCase();
-                    greetLogic.counter(name);
-                    System.out.println(greetLogic.counter(name));
+                    if(!greetLogic.usernameMap.containsKey(name)){
+                        System.out.println(name + " is not in the system");
+                    }
+                    else {
+                        System.out.println(name + " counted "+ greetLogic.counter(name) + " time(s)");
+                    }
 
                 }
 
@@ -72,25 +75,32 @@ public class GreetMain {
                     greetLogic.clear();
                 }
 
+                //CLEARS A SPECIFIED USER NAME FROM THE SYSTEM
+                else if (tab[ 0 ].equalsIgnoreCase("clear") && tab.length == 2) {
+                    String name = tab[ 1 ].toUpperCase();
+                    if(!greetLogic.usernameMap.containsKey(name)){
+                        System.out.println(name + " " +"is not in the system");
+                    }
+                    else{
+                        greetLogic.clearName(name);
+                        System.out.println(name + " cleared from system");
+                    }
+
+                }
+
                 //EXITS THE APPLICATION
                 else if ("exit".equalsIgnoreCase(command)) {
                     greetLogic.exit();
-                }
-
-                //CLEARS A SPECIFIED USER NAME FROM THE SYSTEM
-                else if (tab[ 0 ].equalsIgnoreCase("clear") && tab.length == 2) {
-                    String name = tab[ 1 ];
-                    greetLogic.clearName(name);
                 }
 
                 //DISPLAYS AN 'INVALID OPTION' STATEMENT IF A USER MISTYPED A COMMAND
                 else{
                     System.out.println("Invalid option please type again");
                 }
-            }catch (IllegalArgumentException e){
-                System.out.println("OOPS...ERROR OCCURRED\n" + "Type 'help' to view list of valid commands");
+            }catch (IllegalArgumentException e) {
+                System.out.println("OOPS...ERROR OCCURRED, Please type 'help' to display list valid of commands");
             }
-
         }
     }
 }
+

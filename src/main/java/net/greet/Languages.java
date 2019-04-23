@@ -1,17 +1,17 @@
 package net.greet;
 
 public enum Languages {
-    ISIXHOSA("Mholo "),
-    ENGLISH("Hello "),
-    ISIZULU("Sawubona ");
+    ISIXHOSA("Mholo, "),
+    ENGLISH("Hello, "),
+    ISIZULU("Sawubona, ");
 
-     String greet;
+     String greetType;
 
-    Languages(String greet) {
-        this.greet = greet;
+    Languages(String greetType) {
+        this.greetType = greetType;
     }
-    public String getUsername(String name) {
-        return greet + name;
+    public String getLang() {
+        return greetType;
     }
 }
 
