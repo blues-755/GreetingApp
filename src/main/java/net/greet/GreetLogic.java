@@ -36,11 +36,6 @@ public class GreetLogic {
             return Languages.valueOf("ISIXHOSA").getLang() + name;
         }
     }
-
-//    public String defaultLanguage (String defLang){
-//       defLang = Languages.valueOf("ISIXHOSA").getLang();
-//       return defLang;
-//    }
     public Integer greetedName(String name){
         if(!usernameMap.containsKey(name)){
             return 0;
