@@ -5,6 +5,7 @@ public class GreetMain {
     public static void main(String[] args) {
 
       GreetLogic greetLogic = new GreetLogic();
+      JDBC_Interface jInt = new JDBC_Implementer();
 
         Scanner console = new Scanner(System.in);
         System.out.println("You can also type 'help' to view list of valid commands");
