@@ -6,11 +6,11 @@ import java.util.Map;
 
 public class JDBC_Implementer implements JDBC_Interface {
 
-  final String INSERT_USERNAME = "insert into Users (username, user_counter) values(?, ?)";
+  final String INSERT_USERNAME = "insert into Users (NAME, counter) values(?, ?)";
 
-  final String FIND_USERNAME = "select user_counter from Users where ussername = ?";
+  final String FIND_USERNAME = "select counter from Users where NAME = ?";
 
-  final String UPDATE_USERNAME = "update Users set user_counter = ? where username = ?";
+  final String UPDATE_USERNAME = "update Users set counter = ? where NAME = ?";
 
   Connection connctn;
   PreparedStatement createNewUserName;
