@@ -73,7 +73,7 @@ public class GreetLogic implements GreetInterface {
     return usernameMap.get(name);
   }
   public void exit(){
-    System.out.println("Goodbye...!");
+    System.out.println("Goodbye...!!");
     System.exit(0);
   }
 }
