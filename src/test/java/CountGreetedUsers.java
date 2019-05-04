@@ -7,12 +7,12 @@ public class CountGreetedUsers {
     @Test
     public void countGreetedUsers(){
         GreetLogic logic = new GreetLogic();
-        logic.greetPerson("Lunga", "ISIXHOSA");
-        logic.greetPerson("Lunga", "ENGLISH");
-        logic.greetPerson("Thembela", "ISIZULU");
-        logic.greetPerson("Ovayo", "ISIXHOSA");
-        logic.counterAll();
-        assertEquals(logic.counterAll(), 3);
+        logic.storeName("Lunga", "ISIXHOSA");
+        logic.storeName("Lunga", "ENGLISH");
+        logic.storeName("Thembela", "ISIZULU");
+        logic.storeName("Ovayo", "ISIXHOSA");
+        logic.counter();
+        assertEquals(logic.counter(), 3);
     }
     @Test
     public void testNoUsersGreeted(){
@@ -24,10 +24,10 @@ public class CountGreetedUsers {
     @Test
     public void testCountForGreetedName(){
         GreetLogic greetLogic = new GreetLogic();
-        greetLogic.greetPerson("Lunga", "ISIXHOSA");
-        greetLogic.greetPerson("Lunga", "ENGLISH");
-        greetLogic.greetPerson("Thera", "ISIZULU");
-        greetLogic.greetPerson("Ovayo", "ENGLISH");
-        assertEquals(greetLogic.counter("Ovayo"), 1);
+        greetLogic.storeName("Lunga", "ISIXHOSA");
+        greetLogic.storeName("Lunga", "ENGLISH");
+        greetLogic.storeName("Thera", "ISIZULU");
+        greetLogic.storeName("Ovayo", "ENGLISH");
+        assertEquals(greetLogic.counterName("Lunga"), 2);
     }
 }

@@ -1,9 +1,9 @@
 package net.greet;
 
 public enum Languages {
-    ISIXHOSA("Mholo, "),
-    ENGLISH("Hello, "),
-    ISIZULU("Sawubona, ");
+    ISIXHOSA("Mholo "),
+    ENGLISH("Hello "),
+    ISIZULU("Sawubona ");
 
      String greetType;
 

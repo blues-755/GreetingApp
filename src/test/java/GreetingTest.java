@@ -1,44 +1,53 @@
+import net.greet.CommandExtractor;
+import net.greet.CommandProcessor;
 import net.greet.GreetLogic;
-import net.greet.Languages;
+import org.h2.command.Command;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GreetingTest {
     @Test
     public void testGreetingWithDefaultLanguage(){
-        GreetLogic in = new GreetLogic();
-        in.greetPerson("Lunga", null);
-        assertEquals(Languages.valueOf("ISIXHOSA").getLang() + "Lunga", in.greetPerson("Lunga", null));
+       GreetLogic greetLogic = new GreetLogic();
+       assertEquals(greetLogic.storeName("Lunga", "ISIXHOSA"), "Mholo Lunga");
 
-        assertEquals("Hello, Lunga", in.greetPerson("Lunga", "ENGLISH"));
-        assertEquals("Mholo, Lunga", in.greetPerson("Lunga", "ISIXHOSA"));
-        assertEquals("Mholo, Lunga", in.greetPerson("Lunga", "ZULU"));
-
-        assertEquals(1, in.greetedList().size());
-        in.greetPerson("Yan", "ISIZULU");
-        assertEquals(2, in.greetedList().size());
     }
     @Test
     public void testIfICanGreetAUser(){
         GreetLogic in = new GreetLogic();
-        in.greetPerson("Ovayo","ISIZULU");
-        assertEquals(in.greetPerson("Ovayo", "Sawbona"),"Mholo, Ovayo");
+        assertEquals("Mholo Ovayo", in.storeName("Ovayo","ISIXHOSA"));
     }
     @Test
-    public void testGreeting() {
-        GreetLogic gLogic = new GreetLogic();
-        gLogic.greetPerson("Lunga", "ISIXHOSA");
-        gLogic.greetPerson("Thembela", "ENGLISH");
-        gLogic.greetPerson("Ovayo", "ISIZULU");
-        assertEquals(gLogic.greetedList().size(), 3);
+    public void testGreetedList() {
+        GreetLogic greeter = new GreetLogic();
+        greeter.storeName("Ntando", "ISIZULU");
+        greeter.storeName("Ndiras", "ENGLISH");
+        greeter.storeName("Lunga", "ISIXHOSA");
+        assertEquals(greeter.greetedList().size(), 3);
+    }
+
+    @Test
+    public  void ShouldBeAbleToGreetWithIsiZulu(){
+        GreetLogic greetLogic = new GreetLogic();
+        assertEquals("Sawubona anele", greetLogic.storeName("anele", "ISIZULU"));
+    }
+    @Test
+    public  void ShouldBeAbleToGreetWithIsiXhosa(){
+        GreetLogic greetLogic = new GreetLogic();
+        assertEquals("Mholo anele", greetLogic.storeName("anele", "ISIXHOSA"));
+    }
+    @Test
+    public  void ShouldBeAbleToGreetWithEnglish(){
+        GreetLogic greetLogic = new GreetLogic();
+        assertEquals("Hello anele", greetLogic.storeName("anele", "ENGLISH"));
     }
 
     @Test
     public void testIfICanRemoveUsers() {
-        GreetLogic gLogic = new GreetLogic();
-        gLogic.greetPerson("Lunga", "ENGLISH");
-        gLogic.greetPerson("Thembela", "ISIXHOSA");
-        assertEquals(gLogic.clearName("Lunga"), 1);
+        GreetLogic greetLogic = new GreetLogic();
+        greetLogic.storeName("Lunga", "ENGLISH");
+        greetLogic.storeName("Thembela", "ISIXHOSA");
+        assertEquals(greetLogic.clearName("Lunga"), 1 + " cleared from system");
     }
+
 }

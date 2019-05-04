@@ -9,21 +9,21 @@ public class TestUserClearance {
 
     @Test
     public void testUserClearance(){
-        GreetLogic cG = new GreetLogic();
-        clearLogi.greetPerson("Lunga", "ISIXHOSA");
-        clearLogi.greetPerson("Lunga", "ISIXHOSA");
-        clearLogi.greetPerson("Ovayo", "ENGLISH");
-        clearLogi.greetPerson("Thembela", "ISIZULU");
-        cG.clearName("Lunga");
-        assertEquals(clearLogi.clearName("Lunga"), 2);
+        GreetLogic greetLogic = new GreetLogic();
+        clearLogi.storeName("Lunga", "ISIXHOSA");
+        clearLogi.storeName("Lunga", "ISIXHOSA");
+        clearLogi.storeName("Ovayo", "ENGLISH");
+        clearLogi.storeName("Thembela", "ISIZULU");
+        greetLogic.clearName("Lunga");
+        assertEquals(clearLogi.clearName("Lunga"), 2 + " cleared from system");
     }
 //
     @Test
     public void testShouldRemoveAllUsers(){
-        clearLogi.greetPerson("Ovayo", "ENGLISH");
-        clearLogi.greetPerson("Lunga", "ISIXHOSA");
-        clearLogi.greetPerson("Tshila", "ISIZULU");
+        clearLogi.storeName("Ovayo", "ENGLISH");
+        clearLogi.storeName("Lunga", "ISIXHOSA");
+        clearLogi.storeName("Tshila", "ISIZULU");
         clearLogi.clear();
-        assertEquals(clearLogi.counterAll(), 0);
+        assertEquals(clearLogi.counter(), 0);
     }
 }
