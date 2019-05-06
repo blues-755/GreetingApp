@@ -15,7 +15,7 @@ public class GreetMain {
         System.out.println(processor.execute(command));
 
       } catch (IllegalArgumentException e) {
-        System.out.println("OOPS...ERROR OCCURRED, Please type 'help' to display list valid of commands");
+        System.out.println("OOPS...ERROR OCCURRED, Please type 'help' to display list of valid  commands");
       }
         }
     }

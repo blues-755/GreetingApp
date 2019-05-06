@@ -1,2 +1,2 @@
-//public class DatabaseBuilderTest {
-//}
+public class DatabaseBuilderTest {
+}

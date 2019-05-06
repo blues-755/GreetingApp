@@ -1,7 +1,5 @@
-import net.greet.CommandExtractor;
-import net.greet.CommandProcessor;
+
 import net.greet.GreetLogic;
-import org.h2.command.Command;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

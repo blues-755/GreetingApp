@@ -3,5 +3,6 @@ net/greet/GreetInterface.class
 net/greet/GreetLogic$1.class
 net/greet/GreetMain.class
 net/greet/GreetLogic.class
+net/greet/DatabaseBuilder.class
 net/greet/Languages.class
 net/greet/CommandExtractor.class

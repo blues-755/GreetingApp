@@ -72,6 +72,9 @@ public class GreetLogic implements GreetInterface {
     }
     return usernameMap.get(name);
   }
+  public String greetComm(){
+    return " " + "command MUST be followed by name and language\n" + "Or followed by name only to be greeted with default language";
+  }
   public void exit(){
     System.out.println("Goodbye...!!");
     System.exit(0);

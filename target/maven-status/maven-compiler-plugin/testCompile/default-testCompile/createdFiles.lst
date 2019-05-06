@@ -1,0 +1,5 @@
+TestUserClearance.class
+GreetingTest.class
+DBConnectionTest.class
+DatabaseBuilderTest.class
+CountGreetedUsers.class

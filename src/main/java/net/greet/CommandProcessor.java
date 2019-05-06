@@ -3,12 +3,12 @@ package net.greet;
 public class CommandProcessor {
   public String execute(String output) {
 
-    GreetLogic put = new GreetLogic();//IN MEMORY
+    GreetLogic put = new GreetLogic();// MAP
 //    DatabaseBuilder put = new DatabaseBuilder(); //DATABASE
 
     CommandExtractor extractor = new CommandExtractor(output);
 
-    // GREETING WITH DEFAULT LANGUAGE
+    // GREETING WITH DEFAULT LANGUAGE AND USER LANGUAGE
     if (extractor.getCommander().equalsIgnoreCase("greet") && extractor.tabLength() == 2) {
 
       if (extractor.tabLength() == 3){
@@ -17,7 +17,7 @@ public class CommandProcessor {
       return put.storeName(extractor.getUsername(), String.valueOf(Languages.ISIXHOSA));
     }
 
-    //GREETED LIST OF USERS and GREETED FOR A SINGLE USER
+    //GREETED LIST OF USERS AND GREETED FOR A SINGLE USER
     else if (extractor.getCommander().equalsIgnoreCase("greeted")) {
       if (extractor.tabLength() == 2) {
         System.out.println(
@@ -37,7 +37,7 @@ public class CommandProcessor {
 
     //COUNTER FOR SPECIFIED USER NAME
     else if (extractor.getCommander().equalsIgnoreCase("counter") && extractor.tabLength() == 2) {
-      return  extractor.getUsername() + " counted " + put.counter() + " time(s)";
+      return  extractor.getUsername() + " counted  " + put.counter() + " time(s)";
     }
 
     //COUNTER FOR ALL USER NAMES IN THE SYSTEM
@@ -50,16 +50,24 @@ public class CommandProcessor {
       if (extractor.tabLength() == 2) {
         System.out.println(put.clearName(extractor.getUsername()));
       }
-      else if ("help".equalsIgnoreCase(extractor.getCommander())) {
-        put.help();
-      }
-      else if ("exit".equalsIgnoreCase(extractor.getCommander())) {
-        put.exit();
-      }
       else {
         return String.valueOf(put.clear());
         }
       }
+    else if (extractor.getCommander().equalsIgnoreCase("help")) {
+      put.help();
+    }
+    else if (extractor.getCommander().equalsIgnoreCase("exit")) {
+      put.exit();
+    }
+
+    else if(extractor.getCommander().equalsIgnoreCase("greet") && extractor.tabLength() == 1){
+      return extractor.getCommander() + put.greetComm();
+    }
+    else {
+      System.out.println("INVALID COMMAND >> " + " " + extractor.getCommander() + " "+
+                          "\nType 'help' display list of valid commands");
+    }
       return "";
     }
 }
