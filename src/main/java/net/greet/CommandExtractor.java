@@ -9,24 +9,33 @@ public class CommandExtractor {
    public CommandExtractor(String command){
     this.commander = command.trim().split(" ");
   }
-
   String getCommander() {
-    return commander[0];
+     if (commander.length == 3){
+       return commander[0];
+     }else {
+       return commander[0];
+     }
   }
-
+  boolean hasName() {
+       return !getUsername().isEmpty();
+  }
    String getUsername() {
-     this.username = commander[1];
-     return this.username;
+     if (commander.length >= 2){
+       return this.username = commander[1];
+     }
+     else{
+       return this.username = "";
+     }
   }
-
    public String getLanguage() {
-     this.language = commander[2];
-     return this.language.toUpperCase();
+     if(commander.length == 3) {
+       this.language = commander[2].toUpperCase();
+     } else {
+       this.language = "ISIXHOSA";
+     }
+     return this.language;
   }
-
    int tabLength() {
     return commander.length;
   }
-
-
 }

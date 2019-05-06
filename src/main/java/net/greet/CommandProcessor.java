@@ -1,31 +1,27 @@
 package net.greet;
 
 public class CommandProcessor {
+
+//    DatabaseBuilder put; //DATABASE
+    HelpInfo help = new HelpInfo();
+  GreetLogic put = new GreetLogic();// MAP
   public String execute(String output) {
-
-    GreetLogic put = new GreetLogic();// MAP
-//    DatabaseBuilder put = new DatabaseBuilder(); //DATABASE
-
     CommandExtractor extractor = new CommandExtractor(output);
 
     // GREETING WITH DEFAULT LANGUAGE AND USER LANGUAGE
-    if (extractor.getCommander().equalsIgnoreCase("greet") && extractor.tabLength() == 2) {
-
-      if (extractor.tabLength() == 3){
-        return put.storeName(extractor.getUsername(), extractor.getLanguage()).toUpperCase();
-      }
-      return put.storeName(extractor.getUsername(), String.valueOf(Languages.ISIXHOSA));
+    if (extractor.getCommander().equalsIgnoreCase("greet") && extractor.hasName()) {
+        return put.storeName(extractor.getUsername(), extractor.getLanguage());
     }
 
     //GREETED LIST OF USERS AND GREETED FOR A SINGLE USER
     else if (extractor.getCommander().equalsIgnoreCase("greeted")) {
-      if (extractor.tabLength() == 2) {
-        System.out.println(
+      if (extractor.hasName()) {
+        return
               extractor.getUsername() + " " +
               "greeted" + " " + put.counterName(extractor.getUsername()) + " " +
-              "times(s)");
+              "times(s)";
       } else {
-        System.out.println(put.greetedList());
+        return put.greetedList().toString();
       }
     }
 
@@ -48,21 +44,20 @@ public class CommandProcessor {
       //CLEARS ALL THE USER NAMES IN THE LIST
     else if ("clear".equalsIgnoreCase(extractor.getCommander())) {
       if (extractor.tabLength() == 2) {
-        System.out.println(put.clearName(extractor.getUsername()));
+        return put.clearName(extractor.getUsername());
       }
       else {
-        return String.valueOf(put.clear());
+        return put.clear();
         }
       }
     else if (extractor.getCommander().equalsIgnoreCase("help")) {
-      put.help();
+      help.help();
     }
     else if (extractor.getCommander().equalsIgnoreCase("exit")) {
       put.exit();
     }
-
-    else if(extractor.getCommander().equalsIgnoreCase("greet") && extractor.tabLength() == 1){
-      return extractor.getCommander() + put.greetComm();
+    else if(extractor.getCommander().equalsIgnoreCase("greet")){
+      return extractor.getCommander() + help.greetComm();
     }
     else {
       System.out.println("INVALID COMMAND >> " + " " + extractor.getCommander() + " "+

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: GreetingTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in GreetingTest
-GreetingTest.testGreetingWithDefaultLanguage()  Time elapsed: 0.001 s  <<< FAILURE!
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in GreetingTest
+GreetingTest.testGreetingWithDefaultLanguage()  Time elapsed: 0 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <MHOLO  Lunga> but was: <Mholo Lunga>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
@@ -11,7 +11,7 @@ org.opentest4j.AssertionFailedError: expected: <MHOLO  Lunga> but was: <Mholo Lu
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
 	at GreetingTest.testGreetingWithDefaultLanguage(GreetingTest.java:10)
 
-GreetingTest.testIfICanGreetAUser()  Time elapsed: 0 s  <<< FAILURE!
+GreetingTest.testIfICanGreetAUser()  Time elapsed: 0.001 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <Mholo Ovayo> but was: <MHOLO  Ovayo>
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
@@ -19,4 +19,13 @@ org.opentest4j.AssertionFailedError: expected: <Mholo Ovayo> but was: <MHOLO  Ov
 	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
 	at GreetingTest.testIfICanGreetAUser(GreetingTest.java:16)
+
+GreetingTest.testIfICanRemoveUsers()  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Lunga cleared from system> but was: <1 cleared from system>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at GreetingTest.testIfICanRemoveUsers(GreetingTest.java:48)
 

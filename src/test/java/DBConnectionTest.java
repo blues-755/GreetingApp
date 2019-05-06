@@ -9,7 +9,6 @@ public class DBConnectionTest {
   public void testConnection() throws ClassNotFoundException{
     Connection con;
     Class.forName("org.h2.Driver");
-
   }
 
 }
