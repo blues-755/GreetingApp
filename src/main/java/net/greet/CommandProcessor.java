@@ -2,8 +2,8 @@ package net.greet;
 
 public class CommandProcessor {
 
-//    DatabaseBuilder put; //DATABASE
-    HelpInfo help = new HelpInfo();
+
+  HelpInfo help = new HelpInfo();
   GreetLogic put = new GreetLogic();// MAP
   public String execute(String output) {
     CommandExtractor extractor = new CommandExtractor(output);

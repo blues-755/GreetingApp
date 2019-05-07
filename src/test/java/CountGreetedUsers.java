@@ -18,7 +18,6 @@ public class CountGreetedUsers {
     public void testNoUsersGreeted(){
         GreetLogic noGreet = new GreetLogic();
         assertEquals(noGreet.greetedList().size(), 0);
-
     }
 
     @Test

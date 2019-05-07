@@ -1,5 +1,4 @@
-package net.greet;
-
+import net.greet.CommandExtractor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,7 +7,7 @@ class CommandExtractorTest {
 
   @Test
   void testGreetingWithLang() {
-    CommandExtractor commandExtractor = new CommandExtractor("greet thabang english");
+    CommandExtractor commandExtractor = new CommandExtractor("greet lunga english");
 
     assertEquals("greet", commandExtractor.getCommander());
     assertEquals("lunga", commandExtractor.getUsername());
@@ -17,7 +16,7 @@ class CommandExtractorTest {
 
   @Test
   void testGreetingWithDefaultLang() {
-    CommandExtractor commandExtractor = new CommandExtractor("greet thabang");
+    CommandExtractor commandExtractor = new CommandExtractor("greet lunga");
 
     assertEquals("greet", commandExtractor.getCommander());
     assertEquals("lunga", commandExtractor.getUsername());

@@ -27,7 +27,7 @@ public class DatabaseBuilder implements GreetInterface {
   PreparedStatement delete_;
   PreparedStatement retrieve_all_rows;
 
-  public DatabaseBuilder(){
+  public DatabaseBuilder() {
     try{
       Class.forName("org.h2.Driver");
 

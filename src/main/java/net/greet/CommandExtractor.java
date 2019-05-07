@@ -9,7 +9,7 @@ public class CommandExtractor {
    public CommandExtractor(String command){
     this.commander = command.trim().split(" ");
   }
-  String getCommander() {
+  public String getCommander() {
      if (commander.length == 3){
        return commander[0];
      }else {
@@ -19,7 +19,7 @@ public class CommandExtractor {
   boolean hasName() {
        return !getUsername().isEmpty();
   }
-   String getUsername() {
+   public String getUsername() {
      if (commander.length >= 2){
        return this.username = commander[1];
      }

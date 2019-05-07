@@ -15,7 +15,7 @@ public class TestUserClearance {
         clearLogi.storeName("Ovayo", "ENGLISH");
         clearLogi.storeName("Thembela", "ISIZULU");
         greetLogic.clearName("Lunga");
-        assertEquals(clearLogi.clearName("Lunga"), 2 + " cleared from system");
+        assertEquals(clearLogi.clearName("Lunga"), "Lunga" + " cleared from system");
     }
     @Test
     public void testShouldRemoveAllUsers(){

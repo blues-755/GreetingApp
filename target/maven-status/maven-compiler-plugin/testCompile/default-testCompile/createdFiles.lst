@@ -1,6 +1,4 @@
 TestUserClearance.class
 GreetingTest.class
-net/greet/CommandExtractorTest.class
-DBConnectionTest.class
-DatabaseBuilderTest.class
+CommandExtractorTest.class
 CountGreetedUsers.class
