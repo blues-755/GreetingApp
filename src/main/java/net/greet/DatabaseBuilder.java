@@ -57,8 +57,8 @@ public class DatabaseBuilder implements GreetInterface {
   @Override
   public String storeName(String name, String language) {
     try{
-      select_user.setString(1, name);
-      ResultSet out = select_user.executeQuery();
+      insert_.setString(1, name);
+      ResultSet out = insert_.executeQuery();
       if (!out.next()){
         insert_.setString(1, name);
         insert_.setInt(2, 1);

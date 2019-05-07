@@ -10,7 +10,8 @@ public class HelpInfo {
           "'exit' exits the application\n" +
           "'clear' deletes all users in the system\n" +
           "'clear' followed by the username removes the specified name from the system\n" +
-          "'counter' displays the unique number of users in the system\n");
+          "'counter' displays the unique number of users in the system\n" +
+          "counter followed by the username returns how many times that name had been greeted");
   }
   public String greetComm(){
     return " " + "command MUST be followed by name and language\n" +
