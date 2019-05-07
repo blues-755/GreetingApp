@@ -1,2 +1,2 @@
-# GreetingApp
-https://travis-ci.org/LTDO/GreetingApp.svg?branch=master
+# GreetingApp https://travis-ci.org/LTDO/GreetingApp.svg?branch=master
+
