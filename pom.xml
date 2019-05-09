@@ -23,7 +23,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url>jdbc:h2:file:./target/GreetingApp</url>
+                    <url>jdbc:h2:file:./target/my_db</url>
                     <user>sa</user>
                 </configuration>
             </plugin>

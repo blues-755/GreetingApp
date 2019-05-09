@@ -4,7 +4,7 @@ import java.util.Map;
 
 public interface GreetInterface {
 
-  String storeName(String name, String language) ;
+  String storeName(String name, String language) throws SQLException;
 
   Integer greetedName(String name);
 

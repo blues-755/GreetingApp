@@ -7,14 +7,14 @@ public class DatabaseBuilder implements GreetInterface {
 
   GreetLogic greetLogic = new GreetLogic();
 
-  final String INSERT_  =                   "INSERT INTO userTable(UserName, counter) VALUES(?, ?)";
-  final String SELECT_USER =                "SELECT * FROM userTable WHERE UserName = ? ";
-  final String RETRIEVE_ALL =               "SELECT * FROM userTable";
-  final String RETRIEVE_SINGLE_USER =       "SELECT counter FROM userTable WHERE UserName = ? ";
-  final String UPDATE_ =                    "UPDATE userTable SET counter = ? WHERE UserName = ? ";
-  final String DELETE_A_USER =              "DELETE FROM userTable WHERE UserName  = ? ";
-  final String DELETE_ =                    "DELETE FROM userTable";
-  final String RETRIEVE_ALL_ROWS =          "SELECT COUNT(*) AS counter FROM userTable";
+  final String INSERT_  =                   "INSERT INTO table_(UserName, counter) VALUES(?, ?)";
+  final String SELECT_USER =                "SELECT * FROM table_ WHERE UserName = ? ";
+  final String RETRIEVE_ALL =               "SELECT * FROM table_";
+  final String RETRIEVE_SINGLE_USER =       "SELECT counter FROM table_ WHERE UserName = ? ";
+  final String UPDATE_ =                    "UPDATE table_ SET counter = ? WHERE UserName = ? ";
+  final String DELETE_A_USER =              "DELETE FROM table_ WHERE UserName  = ? ";
+  final String DELETE_ =                    "DELETE FROM table_";
+  final String RETRIEVE_ALL_ROWS =          "SELECT COUNT(*) AS counter FROM table_";
 
   Connection co;
 
@@ -27,14 +27,16 @@ public class DatabaseBuilder implements GreetInterface {
   PreparedStatement delete_;
   PreparedStatement retrieve_all_rows;
 
-  public DatabaseBuilder() {
-    try{
+
+  public DatabaseBuilder(){
+
+    try {
       Class.forName("org.h2.Driver");
 
-      final String table_url = "jdbc:h2:./target/userTable";
+      final String db_url = "jdbc:h2:./target/my_db";
       String username = "sa";
-      String password = " ";
-      co = DriverManager.getConnection(table_url, username, password);
+      String password = "";
+      co = DriverManager.getConnection(db_url, username, password);
 
       insert_ = co.prepareStatement(INSERT_);
       select_user = co.prepareStatement(SELECT_USER);
@@ -57,8 +59,8 @@ public class DatabaseBuilder implements GreetInterface {
   @Override
   public String storeName(String name, String language) {
     try{
-      insert_.setString(1, name);
-      ResultSet out = insert_.executeQuery();
+      select_user.setString(1, name);
+      ResultSet out = select_user.executeQuery();
       if (!out.next()){
         insert_.setString(1, name);
         insert_.setInt(2, 1);
@@ -83,26 +85,17 @@ public class DatabaseBuilder implements GreetInterface {
       ResultSet out = retrieve_all.executeQuery();
       while (out.next())
       {
-        dbData.put(out.getString("name"), out.getInt("counter"));
+        dbData.put(out.getString("Username"), out.getInt("counter"));
       }
     }catch (SQLException e){
-      System.out.println("ERROR");
+      System.out.println("ERROR " + e);
     }
     return dbData;
   }
 
   @Override
   public Integer greetedName(String name) {
-    try{
-      retrieve_single_user.setString(1, name);
-      ResultSet out = retrieve_single_user.executeQuery();
-      if (out.next()){
-        return Integer.valueOf(out.getString("name" + "counter"));
-      }
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
-    return greetedList().size();
+    return greetedList().get(name);
   }
 
   @Override
@@ -153,7 +146,7 @@ public class DatabaseBuilder implements GreetInterface {
         delete_a_user.executeUpdate();
       }
     } catch (SQLException e) {
-      e.printStackTrace();
+      System.out.println(e);
     }
     return clearName(name);
   }

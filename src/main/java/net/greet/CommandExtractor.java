@@ -16,7 +16,7 @@ public class CommandExtractor {
        return commander[0];
      }
   }
-  boolean hasName() {
+  public boolean hasName() {
        return !getUsername().isEmpty();
   }
    public String getUsername() {

@@ -21,7 +21,7 @@ class CommandExtractorTest {
     assertEquals("greet", commandExtractor.getCommander());
     assertEquals("lunga", commandExtractor.getUsername());
     assertEquals("ISIXHOSA", commandExtractor.getLanguage());
-//    assertEquals(true, commandExtractor.hasName());
+    assertEquals(true, commandExtractor.hasName());
   }
 
   @Test
@@ -30,6 +30,13 @@ class CommandExtractorTest {
 
     assertEquals("greeted", commandExtractor.getCommander());
     assertEquals("", commandExtractor.getUsername());
+    assertEquals("ISIXHOSA", commandExtractor.getLanguage());
+  }
+  void testClear() {
+    CommandExtractor commandExtractor = new CommandExtractor("");
+
+    assertEquals("greet", commandExtractor.getCommander());
+    assertEquals("lunga", commandExtractor.getUsername());
     assertEquals("ISIXHOSA", commandExtractor.getLanguage());
   }
 }
