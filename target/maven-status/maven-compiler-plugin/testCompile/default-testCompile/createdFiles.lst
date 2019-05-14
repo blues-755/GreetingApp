@@ -1,4 +1,5 @@
-TestUserClearance.class
-GreetingTest.class
-CommandExtractorTest.class
-CountGreetedUsers.class
+net/greet/CountGreetedUsers.class
+net/greet/TestUserClearance.class
+net/greet/CommandExtractorTest.class
+net/greet/GreetingTest.class
+net/greet/DatabaseTest.class

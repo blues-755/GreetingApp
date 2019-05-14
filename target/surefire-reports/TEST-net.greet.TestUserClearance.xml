@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GreetingTest" time="0.001" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="net.greet.TestUserClearance" time="0.001" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter1917371257489082431.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-09T14-31-30_276-jvmRun1 surefire3641432071121299320tmp surefire_04980848878868462396tmp"/>
+    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter6702860611969200365.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-14T11-22-21_388-jvmRun1 surefire7395847813221031329tmp surefire_08726850561402498083tmp"/>
     <property name="surefire.test.class.path" value="/home/coder/Documents/GreetingApp/target/test-classes:/home/coder/Documents/GreetingApp/target/classes:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/coder/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/coder/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/coder/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/coder"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter1917371257489082431.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter6702860611969200365.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
@@ -58,8 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="GreetingTest.testGreetingWithDefaultLanguage" classname="GreetingTest" time="0"/>
-  <testcase name="GreetingTest.testIfICanGreetAUser" classname="GreetingTest" time="0"/>
-  <testcase name="GreetingTest.testGreetedList" classname="GreetingTest" time="0"/>
-  <testcase name="GreetingTest.testIfICanRemoveUsers" classname="GreetingTest" time="0"/>
+  <testcase name="net.greet.TestUserClearance.testUserClearance" classname="net.greet.TestUserClearance" time="0"/>
+  <testcase name="net.greet.TestUserClearance.testShouldRemoveAllUsers" classname="net.greet.TestUserClearance" time="0.001"/>
 </testsuite>

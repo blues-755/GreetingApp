@@ -1,3 +1,5 @@
+package net.greet;
+
 import net.greet.GreetLogic;
 import org.junit.jupiter.api.Test;
 

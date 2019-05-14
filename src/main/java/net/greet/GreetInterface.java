@@ -6,17 +6,17 @@ public interface GreetInterface {
 
   String storeName(String name, String language) throws SQLException;
 
-  Integer greetedName(String name);
+  Integer greetedName(String name) throws SQLException;
 
-  int counter();
+  int counter() throws SQLException;
 
-  Integer counterName(String name);
+  Integer counterName(String name) throws SQLException;
 
-  Map<String, Integer> greetedList();
+  Map<String, Integer> greetedList() throws SQLException;
 
-  String clear();
+  String clear() throws SQLException;
 
   String clearName(String name) throws SQLException;
 
-  void exit();
+  void exit() throws SQLException;
 }

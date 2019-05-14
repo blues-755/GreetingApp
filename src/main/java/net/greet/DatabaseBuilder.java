@@ -55,7 +55,6 @@ public class DatabaseBuilder implements GreetInterface {
       e.printStackTrace();
     }
   }
-
   @Override
   public String storeName(String name, String language) {
     try{
@@ -72,7 +71,7 @@ public class DatabaseBuilder implements GreetInterface {
         update_.execute();
       }
     }catch (SQLException e) {
-      e.printStackTrace();
+      System.out.println("ERROR" + e);
     }
     return greetLogic.storeName(name, language);
   }
@@ -100,30 +99,12 @@ public class DatabaseBuilder implements GreetInterface {
 
   @Override
   public int counter() {
-    try{
-      ResultSet out = retrieve_all.executeQuery();
-      if (out.next()){
-        return out.getInt("counter");
-      }
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
-    return counter();
+   return greetedList().size();
   }
 
   @Override
   public Integer counterName(String name) {
-
-    try {
-      retrieve_single_user.setString(1, name);
-      ResultSet out = retrieve_single_user.executeQuery();
-    if (out.next()){
-      return out.getInt("counter");
-      }
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
-    return counterName(name);
+    return greetedList().get(name);
   }
 
   @Override
@@ -148,15 +129,10 @@ public class DatabaseBuilder implements GreetInterface {
     } catch (SQLException e) {
       System.out.println(e);
     }
-    return clearName(name);
+    return name + " cleared from database";
   }
-
   @Override
   public void exit() {
-    try {
-      co.close();
-    } catch (SQLException e) {
-      e.printStackTrace();
-    }
+    System.exit(1);
   }
 }

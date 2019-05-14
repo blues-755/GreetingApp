@@ -3,7 +3,7 @@ package net.greet;
 public class CommandProcessor {
   HelpInfo help = new HelpInfo();
 //  GreetLogic put = new GreetLogic();// MAP
-  DatabaseBuilder put = new DatabaseBuilder();
+  DatabaseBuilder put = new DatabaseBuilder();//DATABASE
   public String execute(String output) {
     CommandExtractor extractor = new CommandExtractor(output);
 
@@ -25,17 +25,23 @@ public class CommandProcessor {
       return Languages.valueOf(extractor.getLanguage()).getLang() + extractor.getUsername(); }
 
     //COUNTER FOR SPECIFIED USER NAME
-    else if ("counter".equalsIgnoreCase(extractor.getCommander()) && extractor.tabLength() == 2) {
-      return  extractor.getUsername() + " counted  " + put.counter() + " time(s)"; }
+    else if ("counter".equalsIgnoreCase(extractor.getCommander()) && extractor.hasName()) {
+      return  extractor.getUsername() + " counted  " + put.counterName(extractor.getUsername()) + " time(s)"; }
 
     //COUNTER FOR ALL USER NAMES IN THE SYSTEM
     else if ("counter".equalsIgnoreCase(extractor.getCommander())) { return put.counter() + " user(s) in the list";}
 
-      //CLEARS ALL THE USER NAMES IN THE LIST
-    else if ("clear".equalsIgnoreCase(extractor.getCommander())) { if (extractor.tabLength() == 2) {
+      //CLEAR ALL USERS
+    else if ("clear".equalsIgnoreCase(extractor.getCommander())) { if (extractor.hasName()) {
       return put.clearName(extractor.getUsername());} else { return put.clear();}}
+
+    //HELP INFO
     else if ("help".equalsIgnoreCase((extractor.getCommander()))) {help.help(); }
+
+    //EXITS THE APP
     else if ("exit".equalsIgnoreCase(extractor.getCommander())) {put.exit(); }
+
+    //VALIDATING 'greet' COMMAND
     else if("greet".equalsIgnoreCase(extractor.getCommander())){ return extractor.getCommander() + help.greetComm();}
     else { System.out.println("INVALID COMMAND >> " + " " + extractor.getCommander() + " "+
                               "\nType 'help' display list of valid commands");} return "";}}
