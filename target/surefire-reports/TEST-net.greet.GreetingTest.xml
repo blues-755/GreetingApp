@@ -17,7 +17,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter6913138200289950993.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-15T16-10-21_207-jvmRun1 surefire6801017066600638718tmp surefire_03385039873809487366tmp"/>
+    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter2380663003551558475.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-15T17-15-44_355-jvmRun1 surefire1827602703758987687tmp surefire_08668165777648033923tmp"/>
     <property name="surefire.test.class.path" value="/home/coder/Documents/GreetingApp/target/test-classes:/home/coder/Documents/GreetingApp/target/classes:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/coder/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/coder/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/coder/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/coder"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter6913138200289950993.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter2380663003551558475.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>

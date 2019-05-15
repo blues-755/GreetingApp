@@ -11,7 +11,7 @@ public class DatabaseBuilder implements GreetInterface {
   final String SELECT_USER =                "SELECT * FROM table_ WHERE UserName = ? ";
   final String RETRIEVE_ALL =               "SELECT * FROM table_";
   final String RETRIEVE_SINGLE_USER =       "SELECT counter FROM table_ WHERE UserName = ? ";
-  final String UPDATE_ =                    "UPDATE table_ SET counter = ? WHERE UserName = ? ";
+  final String UPDATE_ =                    "UPDATE table_ SET counter = counter + 1 WHERE UserName = ? ";
   final String DELETE_A_USER =              "DELETE FROM table_ WHERE UserName  = ? ";
   final String DELETE_ =                    "DELETE FROM table_";
   final String RETRIEVE_ALL_ROWS =          "SELECT COUNT(*) AS counter FROM table_";
@@ -66,9 +66,9 @@ public class DatabaseBuilder implements GreetInterface {
         insert_.execute();
       }else {
         int incrementer = out.getInt("counter") + 1;
-        update_.setInt(1, incrementer);
-        update_.setString(2, name);
-        update_.execute();
+//        update_.setInt(1, incrementer);
+        update_.setString(1, name);
+        update_.executeUpdate();
       }
     }catch (SQLException e) {
       System.out.println("ERROR" + e);
