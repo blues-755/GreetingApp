@@ -5,34 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/HelpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/HelpInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommandExtractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/CommandExtractorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/CountGreetedUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GreetingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/GreetingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test classes Logic" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/Test classes Logic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestUserClearance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/TestUserClearance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/CommandProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/DatabaseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/DatabaseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/GreetInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/GreetInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/greet/HelpInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/greet/HelpInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/GreetingTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GreetingTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestUserClearance.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestUserClearance.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CommandExtractorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CountGreetedUsers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GreetingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestUserClearance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/greet-in-java-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_db.trace.db" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +28,90 @@
     <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2001">
+              <caret line="89" column="49" lean-forward="true" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-253">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="96" column="35" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3095#3096#0" expanded="true" />
+                <element signature="e#3135#3136#0" expanded="true" />
+                <element signature="e#3173#3174#0" expanded="true" />
+                <element signature="e#3209#3210#0" expanded="true" />
+                <element signature="e#3266#3267#0" expanded="true" />
+                <element signature="e#3306#3307#0" expanded="true" />
+                <element signature="e#3899#3900#0" expanded="true" />
+                <element signature="e#3923#3924#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1306#1307#0" expanded="true" />
+                <element signature="e#1341#1342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_usertable.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,10 +174,8 @@
         <option value="$PROJECT_DIR$/src/test/java/CountGreetedUsers.java" />
         <option value="$PROJECT_DIR$/src/test/java/GreetingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestUserClearance.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_usertable.sql" />
         <option value="$PROJECT_DIR$/src/test/java/CommandExtractorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/HelpInfo.java" />
@@ -124,6 +183,8 @@
         <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java" />
       </list>
     </option>
   </component>
@@ -159,8 +220,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +231,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,8 +361,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DatabaseTest" />
-        <item itemvalue="JUnit.DatabaseTest.testCounterForNameDB" />
         <item itemvalue="JUnit.DatabaseTest.testGreetedNameDB" />
+        <item itemvalue="JUnit.DatabaseTest.testCounterForNameDB" />
         <item itemvalue="Application.GreetMain" />
         <item itemvalue="JUnit.CommandExtractorTest.testGreeted" />
       </list>
@@ -329,24 +390,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DatabaseTest - 2019.05.14 at 10h 23m 20s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.14 at 10h 28m 57s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.14 at 10h 40m 21s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.14 at 10h 41m 56s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandExtractorTest_testGreeted - 2019.05.14 at 10h 47m 31s.xml">
-      <configuration name="CommandExtractorTest.testGreeted" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.14 at 16h 16m 07s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.14 at 16h 17m 00s.xml">
       <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
     </history-entry>
@@ -357,6 +400,24 @@
       <configuration name="DatabaseTest.testCounterForNameDB" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DatabaseTest - 2019.05.14 at 16h 18m 06s.xml">
+      <configuration name="DatabaseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest - 2019.05.15 at 10h 20m 00s.xml">
+      <configuration name="DatabaseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest - 2019.05.15 at 10h 26m 50s.xml">
+      <configuration name="DatabaseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testCounterForNameDB - 2019.05.15 at 10h 28m 34s.xml">
+      <configuration name="DatabaseTest.testCounterForNameDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.15 at 10h 28m 48s.xml">
+      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.15 at 10h 59m 54s.xml">
+      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest - 2019.05.15 at 11h 00m 09s.xml">
       <configuration name="DatabaseTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -371,8 +432,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1313" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info auto_hide="true" content_ui="combo" x="53" y="55" width="1313" height="713" id="Project" maximized="true" order="0" type="WINDOWED" weight="0.28887135" />
+      <window_info active="true" auto_hide="true" content_ui="combo" x="53" y="55" width="1313" height="713" id="Project" maximized="true" order="0" type="WINDOWED" visible="true" weight="0.28887135" />
       <window_info id="DB Browser" order="1" />
       <window_info id="Project Explorer" order="2" weight="0.32991317" />
       <window_info id="Job Explorer" order="3" weight="0.32083002" />
@@ -603,27 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_usertable.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -643,26 +684,6 @@
             <element signature="e#211#212#0" expanded="true" />
             <element signature="e#386#387#0" expanded="true" />
             <element signature="e#430#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,24 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding>
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/CountGreetedUsers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -719,6 +722,74 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/GreetLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1341#1342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_usertable.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2001">
+          <caret line="89" column="49" lean-forward="true" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/DatabaseBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="96" column="35" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3095#3096#0" expanded="true" />
+            <element signature="e#3135#3136#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+            <element signature="e#3209#3210#0" expanded="true" />
+            <element signature="e#3266#3267#0" expanded="true" />
+            <element signature="e#3306#3307#0" expanded="true" />
+            <element signature="e#3899#3900#0" expanded="true" />
+            <element signature="e#3923#3924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>

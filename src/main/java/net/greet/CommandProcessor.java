@@ -20,7 +20,7 @@ public class CommandProcessor {
               "times(s)"; } else { return put.greetedList().toString(); }}
 
     //CHECKING THE GREETED USERNAME
-    else if (extractor.getLanguage().isEmpty()) { //extractor.tabLength > 2
+    else if (extractor.getLanguage().isEmpty()) {
       Languages.valueOf(extractor.getLanguage());
       return Languages.valueOf(extractor.getLanguage()).getLang() + extractor.getUsername(); }
 
