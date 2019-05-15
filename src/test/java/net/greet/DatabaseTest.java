@@ -76,7 +76,7 @@ public class DatabaseTest {
     builder.storeName("Ovayo", "ENGLISH");
     builder.storeName("Thembela", "ISIZULU");
 
-    assertEquals(builder.counterName("Lunga"), 2);
+    assertEquals(builder.counterName("Thembela"), 1);
   }
   @Test
   public void testGreetedNameDB(){
@@ -87,6 +87,6 @@ public class DatabaseTest {
     builder.storeName("Ovayo", "ENGLISH");
     builder.storeName("Thembela", "ISIZULU");
 
-   assertEquals(builder.greetedName("Lunga"), 2);
+   assertEquals(builder.greetedName("Thembela"), 1);
   }
 }
