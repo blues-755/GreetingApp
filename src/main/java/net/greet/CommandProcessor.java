@@ -1,10 +1,12 @@
 package net.greet;
 
+import java.sql.SQLException;
+
 public class CommandProcessor {
   HelpInfo help = new HelpInfo();
 //  GreetLogic put = new GreetLogic();// MAP
   DatabaseBuilder put = new DatabaseBuilder();//DATABASE
-  public String execute(String output) {
+  public String execute(String output) throws SQLException {
     CommandExtractor extractor = new CommandExtractor(output);
 
     // GREETING WITH DEFAULT LANGUAGE AND USER LANGUAGE
@@ -13,11 +15,16 @@ public class CommandProcessor {
     }
 
     //GREETED LIST OF USERS AND GREETED FOR A SINGLE USER
-    else if ("greeted".equalsIgnoreCase(extractor.getCommander())) { if (extractor.hasName()) {
+    else if ("greeted".equalsIgnoreCase(extractor.getCommander())) {
+      if (extractor.hasName()) {
         return
               extractor.getUsername() + " " +
               "greeted" + " " + put.counterName(extractor.getUsername()) + " " +
-              "times(s)"; } else { return put.greetedList().toString(); }}
+              "times(s)";
+      }
+      else { return put.greetedList().toString();
+      }
+    }
 
     //CHECKING THE GREETED USERNAME
     else if (extractor.getLanguage().isEmpty()) {
@@ -44,4 +51,5 @@ public class CommandProcessor {
     //VALIDATING 'greet' COMMAND
     else if("greet".equalsIgnoreCase(extractor.getCommander())){ return extractor.getCommander() + help.greetComm();}
     else { System.out.println("INVALID COMMAND >> " + " " + extractor.getCommander() + " "+
-                              "\nType 'help' display list of valid commands");} return "";}}
+                              "\nType 'help' display list of valid commands");} return "";}
+}

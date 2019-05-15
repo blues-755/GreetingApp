@@ -1,5 +1,4 @@
 package net.greet;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,11 +46,9 @@ public class GreetLogic implements GreetInterface {
       usernameMap.remove(name);
       return name + " cleared from system";
     }
-    else{
-      return name + " " +"is not in the system\n" +
-                          "Run 'greeted' command to display list of names in the system";
-    }
+    else { return name + " " +"is not in the system\n" + "Run 'greeted' command to display list of names in the system"; }
   }
+
   public int counter(){
     return usernameMap.size();
   }

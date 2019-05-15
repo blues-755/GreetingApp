@@ -48,7 +48,7 @@ public class DatabaseBuilder implements GreetInterface {
       retrieve_all_rows = co.prepareStatement(RETRIEVE_ALL_ROWS);
 
     }  catch (SQLException e) {
-      System.out.println("fail to connect to the db: " + e);
+      System.out.println("Failed to connect to the db: " + e);
       e.printStackTrace();
     }
     catch (ClassNotFoundException e) {
@@ -114,7 +114,7 @@ public class DatabaseBuilder implements GreetInterface {
     } catch (SQLException e) {
       e.printStackTrace();
     }
-    return "All cleared from DB";
+    return "All users cleared from system";
   }
   @Override
   public String clearName(String name) {
@@ -129,10 +129,11 @@ public class DatabaseBuilder implements GreetInterface {
     } catch (SQLException e) {
       System.out.println(e);
     }
-    return name + " cleared from database";
+    return name + " cleared from system";
   }
   @Override
-  public void exit() {
+  public void exit() throws SQLException {
+    co.close();
     System.exit(1);
   }
 }
