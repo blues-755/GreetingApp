@@ -49,18 +49,13 @@ public class DatabaseTest {
   public void testGreetedUsersInDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
     builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Thembela", "ISIZULU");
-    System.out.println(builder.greetedList() + " usersin db: exp +> 3");
-    assertEquals(builder.greetedList().size(), 3);
+    assertEquals(builder.greetedList().size(), 1);
 
   }
   @Test
   public void testClearAllUsersInDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
     builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Thembela", "ISIZULU");
     builder.clear();
     assertEquals(builder.counter(), 0);
   }
@@ -68,43 +63,27 @@ public class DatabaseTest {
   public void testClearName(){
     DatabaseBuilder builder = new DatabaseBuilder();
     builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Thembela", "ISIZULU");
     builder.clearName("Lunga");
-    assertEquals(builder.greetedList().size(), 2);
+    assertEquals(builder.greetedList().size(), 0);
   }
   @Test
   public void testCounterDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
     builder.storeName("Lunga", "ISIXHOSA");
     builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Thembela", "ISIZULU");
-    builder.storeName("Nelly", "ISIXHOSA");
-
-    assertEquals(builder.counter(), 4);
+    assertEquals(builder.counter(), 2);
 
   }
   @Test
   public void testCounterForNameDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
     builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Ovayo", "ENGLISH");
-    System.out.println(builder.greetedList() + " counter4name db: exp +> themb 1");
-    builder.storeName("Thembela", "ISIZULU");
-
-    assertEquals(builder.counterName("Thembela"), 1);
+    assertEquals(builder.counterName("Thembela"), 0);
   }
   @Test
   public void testGreetedNameDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Lunga", "ISIXHOSA");
-    builder.storeName("Ovayo", "ENGLISH");
-    builder.storeName("Thembela", "ISIZULU");
-    System.out.println(builder.greetedList() + " greetedNadb db: exp +> 2");
-   assertEquals(builder.greetedName("Lunga"), 2);
+    builder.storeName("Lunga", "ENGLISH");
+   assertEquals(builder.greetedName("Lunga"), 1);
   }
 }
