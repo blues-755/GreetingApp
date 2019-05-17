@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+            <state relative-caret-position="328">
+              <caret line="72" column="53" lean-forward="true" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -485,21 +485,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DatabaseTest - 2019.05.17 at 10h 36m 28s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.17 at 10h 40m 10s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.17 at 10h 51m 44s.xml">
-      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.17 at 10h 51m 59s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DatabaseTest - 2019.05.17 at 10h 55m 45s.xml">
-      <configuration name="DatabaseTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DatabaseTest - 2019.05.17 at 10h 56m 46s.xml">
       <configuration name="DatabaseTest" configurationId="JUnit" />
     </history-entry>
@@ -515,6 +500,21 @@
     <history-entry file="DatabaseTest - 2019.05.17 at 11h 17m 34s.xml">
       <configuration name="DatabaseTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DatabaseTest_testGreetedUsersInDB - 2019.05.17 at 11h 18m 23s.xml">
+      <configuration name="DatabaseTest.testGreetedUsersInDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest - 2019.05.17 at 11h 19m 00s.xml">
+      <configuration name="DatabaseTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.17 at 11h 21m 20s.xml">
+      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.17 at 11h 21m 41s.xml">
+      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DatabaseTest_testGreetedNameDB - 2019.05.17 at 11h 21m 55s.xml">
+      <configuration name="DatabaseTest.testGreetedNameDB" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,9 +527,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1313" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="53" y="55" width="1313" height="713" id="Project" maximized="true" order="0" visible="true" weight="0.24782951" />
+      <window_info content_ui="combo" x="53" y="55" width="1313" height="713" id="Project" maximized="true" order="0" visible="true" weight="0.24782951" />
       <window_info id="DB Browser" order="1" weight="0.32991317" />
       <window_info id="Project Explorer" order="2" weight="0.32991317" />
       <window_info id="Job Explorer" order="3" weight="0.32083002" />
@@ -542,13 +541,13 @@
       <window_info id="Favorites" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" x="67" y="55" width="1299" height="713" id="Find" maximized="true" order="1" type="WINDOWED" weight="0.05" />
-      <window_info anchor="bottom" x="53" y="55" width="1313" height="713" id="Run" maximized="true" order="2" side_tool="true" type="WINDOWED" visible="true" weight="0.79820627" />
+      <window_info anchor="bottom" x="53" y="55" width="1313" height="713" id="Run" maximized="true" order="2" side_tool="true" type="WINDOWED" weight="0.79820627" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.05" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.05" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32884902" />
-      <window_info anchor="bottom" x="53" y="55" width="1313" height="713" id="Terminal" maximized="true" order="8" type="WINDOWED" visible="true" weight="0.8635682" />
+      <window_info active="true" anchor="bottom" x="53" y="55" width="1313" height="713" id="Terminal" maximized="true" order="8" type="WINDOWED" visible="true" weight="0.8635682" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.135" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.05" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -880,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state relative-caret-position="328">
+          <caret line="72" column="53" lean-forward="true" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
