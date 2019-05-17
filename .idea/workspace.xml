@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d64baf91-acdb-45f1-9b6a-35563f18b5e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitIgnore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitIgnore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GreetingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GreetingApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Help" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/greet-in-java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/src/main/java/net/greet/GreetLogic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/src/main/java/net/greet/GreetMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/src/main/java/net/greet/Languages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/classes/META-INF/greet-in-java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/surefire-reports/GreetLogicTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/surefire-reports/TEST-GreetLogicTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/test-classes/META-INF/greet-in-java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/greet/GreetInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/greet/GreetInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.DatabaseTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.DatabaseTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetingTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.GreetingTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.TestUserClearance.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.greet.TestUserClearance.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/net.greet.DatabaseTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/net.greet.DatabaseTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/net/greet/DatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/greet/DatabaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greet-in-java.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
@@ -62,6 +30,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -258,68 +238,6 @@
             <path>
               <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="greet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="migration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GreetingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GreetingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="greet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -747,16 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/greet/CommandExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -884,6 +792,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
