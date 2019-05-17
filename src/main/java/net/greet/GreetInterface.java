@@ -10,7 +10,7 @@ public interface GreetInterface {
 
   int counter() throws SQLException;
 
-  Integer counterName(String name) throws SQLException;
+  Integer counterName(String name);
 
   Map<String, Integer> greetedList() throws SQLException;
 
