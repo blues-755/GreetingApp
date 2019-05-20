@@ -25,9 +25,7 @@ public class GreetLogic implements GreetInterface {
   }
 
   public Integer greetedName(String name){
-    if(!usernameMap.containsKey(name)){
-      return 0;
-    }
+    if(!usernameMap.containsKey(name)) return 0;
     return usernameMap.get(name);
   }
 
@@ -54,10 +52,10 @@ public class GreetLogic implements GreetInterface {
   }
 
   public Integer counterName(String name){
-    if (!usernameMap.containsKey(name)){
-      return 0;
+    if (usernameMap.containsKey(name)) {
+      return usernameMap.get(name);
     }
-    return usernameMap.get(name);
+    return 0;
   }
   public void exit(){
     System.out.println("Goodbye...!!");

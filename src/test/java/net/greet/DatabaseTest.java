@@ -5,10 +5,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DatabaseTest {
+
+  GreetInterface greetInterface = mock(GreetInterface.class);
 
   final String db_url = "jdbc:h2:file:./target/my_db";
   final String username = "sa";
@@ -32,19 +35,22 @@ public class DatabaseTest {
   @Test
   public void testGreetingDB() {
     DatabaseBuilder builder = new DatabaseBuilder();
-    assertEquals(builder.storeName("Lunga", "ISIXHOSA"), "MHOLO  Lunga");
-    assertEquals(builder.storeName("Aya", "ISIXHOSA"), "MHOLO  Aya");
-    System.out.println(builder.greetedList());
+    builder.storeName("Blue", "ISIXHOSA");
+    builder.storeName("Aya", "ISIXHOSA");
+    assertEquals(builder.greetedList().size(), 2);
   }
   @Test
   public void testCounterForNameDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    assertEquals(builder.counterName("Lunga"), builder.greetedName("Lunga"));
+    builder.storeName("Lunga", "ENGLISH");
+    assertEquals(builder.counterName("Lunga"), 1);
   }
   @Test
   public void testCounterDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    assertEquals(builder.counter(), 0);
+    builder.storeName("Ovayo", "ENGLISH");
+    builder.storeName("Thembela", "ISIZULU");
+    assertEquals(builder.counter(), 5);
 
   }
 
@@ -58,13 +64,14 @@ public class DatabaseTest {
   @Test
   public void testClearName(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    builder.clearName("Nelly");
-    assertEquals(builder.greetedList().size(), 0);
+    builder.storeName("Nelly", "ISIZULU");
+    assertEquals(builder.clearName("Nelly"), "Nelly cleared from system");
   }
 
   @Test
   public void testClearAllUsersInDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
+    builder.storeName("thabang", "ENGLISH");
     builder.clear();
     assertEquals(builder.counter(), 0);
   }

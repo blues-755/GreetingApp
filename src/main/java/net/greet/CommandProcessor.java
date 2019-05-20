@@ -43,7 +43,7 @@ public class CommandProcessor {
       return put.clearName(extractor.getUsername());} else { return put.clear();}}
 
     //HELP INFO
-    else if ("help".equalsIgnoreCase((extractor.getCommander()))) {help.help(); }
+    else if ("help".equalsIgnoreCase((extractor.getCommander()))) {help.help();}
 
     //EXITS THE APP
     else if ("exit".equalsIgnoreCase(extractor.getCommander())) {put.exit(); }

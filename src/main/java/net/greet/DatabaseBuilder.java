@@ -65,7 +65,7 @@ public class DatabaseBuilder implements GreetInterface {
         insert_.setInt(2, 1);
         insert_.execute();
       }else {
-        int incrementer = out.getInt("counter") + 1;
+//        int incrementer = out.getInt("counter") + 1;
 //        update_.setInt(1, incrementer);
         update_.setString(1, name);
         update_.executeUpdate();
@@ -94,7 +94,7 @@ public class DatabaseBuilder implements GreetInterface {
 
   @Override
   public Integer greetedName(String name) {
-    return greetedList().get(name);
+     return greetedList().get(name);
   }
 
   @Override
@@ -104,7 +104,7 @@ public class DatabaseBuilder implements GreetInterface {
 
   @Override
   public Integer counterName(String name) {
-    return greetedList().get(name);
+      return greetedList().get(name);
   }
 
   @Override
