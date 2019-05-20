@@ -25,7 +25,9 @@ public class GreetLogic implements GreetInterface {
   }
 
   public Integer greetedName(String name){
-    if(!usernameMap.containsKey(name)) return 0;
+    if(!usernameMap.containsKey(name)) {
+      return 0;
+    }
     return usernameMap.get(name);
   }
 
