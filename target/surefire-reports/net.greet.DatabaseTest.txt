@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: net.greet.DatabaseTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 s - in net.greet.DatabaseTest
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.484 s <<< FAILURE! - in net.greet.DatabaseTest
+net.greet.DatabaseTest.testCounterDB()  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at net.greet.DatabaseTest.testCounterDB(DatabaseTest.java:47)
+
+net.greet.DatabaseTest.testClearName()  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:510)
+	at net.greet.DatabaseTest.testClearName(DatabaseTest.java:61)
+

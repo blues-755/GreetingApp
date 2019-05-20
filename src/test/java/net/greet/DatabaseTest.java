@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DatabaseTest {
 
-
   final String db_url = "jdbc:h2:file:./target/my_db";
   final String username = "sa";
   final String password = "";
@@ -22,10 +21,9 @@ public class DatabaseTest {
   public void eraseDB(){
     try {
       Connection conn = getConn();
-      Statement smt = conn.createStatement();
-      smt.addBatch("delete from table_");
-      smt.executeBatch();
-
+      Statement connStatement = conn.createStatement();
+      connStatement.addBatch("delete from table_");
+      connStatement.executeBatch();
     }catch (SQLException E){
       System.out.println("ERROR" + E);
     }
@@ -35,41 +33,39 @@ public class DatabaseTest {
   public void testGreetingDB() {
     DatabaseBuilder builder = new DatabaseBuilder();
     assertEquals(builder.storeName("Lunga", "ISIXHOSA"), "MHOLO  Lunga");
-  }
-  @Test
-  public void testClearAllUsersInDB(){
-    DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Thembela", "ISIXHOSA");
-    builder.clear();
-    assertEquals(builder.counter(), 0);
-  }
-  @Test
-  public void testClearName(){
-    DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Nelly", "ISIXHOSA");
-    builder.clearName("Nelly");
-    assertEquals(builder.greetedList().size(), 0);
-  }
-  @Test
-  public void testCounterDB(){
-    DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Mla", "ISIXHOSA");
-    builder.storeName("Banks", "ENGLISH");
-    assertEquals(builder.counter(), 2);
-
+    assertEquals(builder.storeName("Aya", "ISIXHOSA"), "MHOLO  Aya");
+    System.out.println(builder.greetedList());
   }
   @Test
   public void testCounterForNameDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Saider", "ISIXHOSA");
-    builder.storeName("Inga",  "ISIXHOSA");
-    assertEquals(builder.counterName("Inga"), 1);
+    assertEquals(builder.counterName("Lunga"), builder.greetedName("Lunga"));
+  }
+  @Test
+  public void testCounterDB(){
+    DatabaseBuilder builder = new DatabaseBuilder();
+    assertEquals(builder.counter(), 0);
+
   }
 
   @Test
   public void testGreetedNameDB(){
     DatabaseBuilder builder = new DatabaseBuilder();
-    builder.storeName("Ntando", "ENGLISH");
-   assertEquals(builder.greetedName("Ntanda"), null);
+    builder.storeName("Ntando", "ISIXHOSA");
+   assertEquals(builder.greetedName("Ntando"), 1);
+  }
+
+  @Test
+  public void testClearName(){
+    DatabaseBuilder builder = new DatabaseBuilder();
+    builder.clearName("Nelly");
+    assertEquals(builder.greetedList().size(), 0);
+  }
+
+  @Test
+  public void testClearAllUsersInDB(){
+    DatabaseBuilder builder = new DatabaseBuilder();
+    builder.clear();
+    assertEquals(builder.counter(), 0);
   }
 }
