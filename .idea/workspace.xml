@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+              <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -502,7 +502,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="6" visible="true" weight="0.05" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32884902" />
-      <window_info active="true" anchor="bottom" x="53" y="55" width="1313" height="713" id="Terminal" maximized="true" order="8" type="WINDOWED" visible="true" weight="0.8635682" />
+      <window_info anchor="bottom" x="53" y="55" width="1313" height="713" id="Terminal" maximized="true" order="8" type="WINDOWED" weight="0.8635682" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.135" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.19" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
@@ -825,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/net/greet/DatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
