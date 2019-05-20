@@ -17,7 +17,7 @@
     <property name="user.country" value="ZA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter1992863503502876289.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-20T12-33-57_128-jvmRun1 surefire7602460996337752444tmp surefire_02558355930610385527tmp"/>
+    <property name="sun.java.command" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter602627139490422765.jar /home/coder/Documents/GreetingApp/target/surefire 2019-05-20T14-37-08_277-jvmRun1 surefire1821639395677865803tmp surefire_07476147691414336747tmp"/>
     <property name="surefire.test.class.path" value="/home/coder/Documents/GreetingApp/target/test-classes:/home/coder/Documents/GreetingApp/target/classes:/home/coder/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/home/coder/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/coder/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/coder/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/home/coder/.m2/repository/com/h2database/h2/1.4.199/h2-1.4.199.jar:/home/coder/.m2/repository/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0.jar:/home/coder/.m2/repository/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4.jar:/home/coder/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4.jar:/home/coder/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/coder"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter1992863503502876289.jar"/>
+    <property name="surefire.real.class.path" value="/home/coder/Documents/GreetingApp/target/surefire/surefirebooter602627139490422765.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
@@ -58,8 +58,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="net.greet.GreetingTest.testGreetedList" classname="net.greet.GreetingTest" time="0"/>
   <testcase name="net.greet.GreetingTest.testGreetingWithDefaultLanguage" classname="net.greet.GreetingTest" time="0"/>
   <testcase name="net.greet.GreetingTest.testIfICanGreetAUser" classname="net.greet.GreetingTest" time="0"/>
   <testcase name="net.greet.GreetingTest.testIfICanRemoveUsers" classname="net.greet.GreetingTest" time="0"/>
+  <testcase name="net.greet.GreetingTest.testGreetedList" classname="net.greet.GreetingTest" time="0"/>
 </testsuite>

@@ -30,6 +30,7 @@ public class DatabaseBuilder implements GreetInterface {
 
   public DatabaseBuilder(){
 
+
     try {
       Class.forName("org.h2.Driver");
 
@@ -49,10 +50,9 @@ public class DatabaseBuilder implements GreetInterface {
 
     }  catch (SQLException e) {
       System.out.println("Failed to connect to the db: " + e);
-      e.printStackTrace();
     }
     catch (ClassNotFoundException e) {
-      e.printStackTrace();
+      System.out.println("SOME UNEXPECTED ERROR OCCURRED");
     }
   }
   @Override

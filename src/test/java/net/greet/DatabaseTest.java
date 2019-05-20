@@ -5,13 +5,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DatabaseTest {
-
-  GreetInterface greetInterface = mock(GreetInterface.class);
 
   final String db_url = "jdbc:h2:file:./target/my_db";
   final String username = "sa";
@@ -20,18 +17,18 @@ public class DatabaseTest {
   public Connection getConn() throws SQLException {
     return DriverManager.getConnection(db_url, username, password);
   }
-@BeforeEach
-  public void eraseDB(){
+  @BeforeEach
+  public void eraseDB() {
     try {
-      Connection conn = getConn();
-      Statement connStatement = conn.createStatement();
-      connStatement.addBatch("delete from table_");
-      connStatement.executeBatch();
-    }catch (SQLException E){
-      System.out.println("ERROR" + E);
+      try(Connection conn = getConn()) {
+        Statement statement = conn.createStatement();
+        statement.addBatch("delete from table_");
+        statement.executeBatch();
+      }
+    } catch(Exception ex) {
+      System.out.println("ERROR " + ex);
     }
   }
-
   @Test
   public void testGreetingDB() {
     DatabaseBuilder builder = new DatabaseBuilder();
@@ -51,7 +48,6 @@ public class DatabaseTest {
     builder.storeName("Ovayo", "ENGLISH");
     builder.storeName("Thembela", "ISIZULU");
     assertEquals(builder.counter(), 5);
-
   }
 
   @Test

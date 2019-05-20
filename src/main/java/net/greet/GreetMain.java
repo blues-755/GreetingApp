@@ -19,7 +19,7 @@ public class GreetMain {
       } catch (IllegalArgumentException e) {
         System.out.println("OOPS...ERROR OCCURRED, Please type 'help' to display list of valid commands");
       } catch (SQLException e) {
-        e.printStackTrace();
+        System.out.println("SOME UNEXPECTED ERROR OCCURRED");
       }
     }
     }

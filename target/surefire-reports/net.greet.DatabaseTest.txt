@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: net.greet.DatabaseTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 s - in net.greet.DatabaseTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 s - in net.greet.DatabaseTest
