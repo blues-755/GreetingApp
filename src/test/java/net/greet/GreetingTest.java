@@ -1,6 +1,4 @@
 package net.greet;
-
-import net.greet.GreetLogic;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,7 +7,6 @@ public class GreetingTest {
     public void testGreetingWithDefaultLanguage(){
        GreetLogic greetLogic = new GreetLogic();
        assertEquals(greetLogic.storeName("Lunga", "ISIXHOSA"), "MHOLO  Lunga");
-
     }
     @Test
     public void testIfICanGreetAUser(){
@@ -48,5 +45,4 @@ public class GreetingTest {
         greetLogic.storeName("Thembela", "ISIXHOSA");
         assertEquals(greetLogic.clearName("Lunga"), "Lunga" + " cleared from system");
     }
-
 }

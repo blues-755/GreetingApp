@@ -32,6 +32,7 @@ public class GreetLogic implements GreetInterface {
   }
 
   public Map<String, Integer> greetedList(){
+
     return usernameMap;
   }
 

@@ -7,14 +7,14 @@ public class DatabaseBuilder implements GreetInterface {
 
   GreetLogic greetLogic = new GreetLogic();
 
-  final String INSERT_  =                   "INSERT INTO table_(UserName, counter) VALUES(?, ?)";
-  final String SELECT_USER =                "SELECT * FROM table_ WHERE UserName = ? ";
-  final String RETRIEVE_ALL =               "SELECT * FROM table_";
-  final String RETRIEVE_SINGLE_USER =       "SELECT counter FROM table_ WHERE UserName = ? ";
-  final String UPDATE_ =                    "UPDATE table_ SET counter = counter + 1 WHERE UserName = ? ";
-  final String DELETE_A_USER =              "DELETE FROM table_ WHERE UserName  = ? ";
-  final String DELETE_ =                    "DELETE FROM table_";
-  final String RETRIEVE_ALL_ROWS =          "SELECT COUNT(*) AS counter FROM table_";
+  final String INSERT_  =                   "INSERT INTO userTable(UserName, counter) VALUES(?, ?)";
+  final String SELECT_USER =                "SELECT * FROM userTable WHERE UserName = ? ";
+  final String RETRIEVE_ALL =               "SELECT * FROM userTable";
+  final String RETRIEVE_SINGLE_USER =       "SELECT counter FROM userTable WHERE UserName = ? ";
+  final String UPDATE_ =                    "UPDATE userTable SET counter = counter + 1 WHERE UserName = ? ";
+  final String DELETE_A_USER =              "DELETE FROM userTable WHERE UserName  = ? ";
+  final String DELETE_ =                    "DELETE FROM userTable";
+  final String RETRIEVE_ALL_ROWS =          "SELECT COUNT(*) AS counter FROM userTable";
 
   Connection co;
 
@@ -65,8 +65,6 @@ public class DatabaseBuilder implements GreetInterface {
         insert_.setInt(2, 1);
         insert_.execute();
       }else {
-//        int incrementer = out.getInt("counter") + 1;
-//        update_.setInt(1, incrementer);
         update_.setString(1, name);
         update_.executeUpdate();
       }

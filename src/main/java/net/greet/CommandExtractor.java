@@ -35,7 +35,4 @@ public class CommandExtractor {
      }
      return this.language;
   }
-   int tabLength() {
-    return commander.length;
-  }
 }
