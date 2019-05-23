@@ -8,9 +8,7 @@ public class CommandProcessor {
   CommandProcessor(GreetInterface greetInterface){
       this.put = greetInterface;
   }
-  HelpInfo help = new HelpInfo();
-//  GreetLogic put = new GreetLogic();// MAP
-//  DatabaseBuilder put = new DatabaseBuilder();//DATABASE
+    HelpInfo help = new HelpInfo();
     String execute(String output) throws SQLException {
     CommandExtractor extractor = new CommandExtractor(output);
 
