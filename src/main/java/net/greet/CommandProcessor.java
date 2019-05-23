@@ -3,10 +3,15 @@ package net.greet;
 import java.sql.SQLException;
 
 public class CommandProcessor {
+  GreetInterface put;
+
+  CommandProcessor(GreetInterface greetInterface){
+      this.put = greetInterface;
+  }
   HelpInfo help = new HelpInfo();
 //  GreetLogic put = new GreetLogic();// MAP
-  DatabaseBuilder put = new DatabaseBuilder();//DATABASE
-  public String execute(String output) throws SQLException {
+//  DatabaseBuilder put = new DatabaseBuilder();//DATABASE
+    String execute(String output) throws SQLException {
     CommandExtractor extractor = new CommandExtractor(output);
 
     // GREETING WITH DEFAULT LANGUAGE AND USER LANGUAGE
@@ -43,13 +48,14 @@ public class CommandProcessor {
       return put.clearName(extractor.getUsername());} else { return put.clear();}}
 
     //HELP INFO
-    else if ("help".equalsIgnoreCase((extractor.getCommander()))) {help.help();}
+    else if ("help".equalsIgnoreCase((extractor.getCommander()))) {return help.help();}
 
     //EXITS THE APP
     else if ("exit".equalsIgnoreCase(extractor.getCommander())) {put.exit(); }
 
     //VALIDATING 'greet' COMMAND
     else if("greet".equalsIgnoreCase(extractor.getCommander())){ return extractor.getCommander() + help.greetComm();}
-    else { System.out.println("INVALID COMMAND >> " + " " + extractor.getCommander() + " "+
-                              "\nType 'help' display list of valid commands");} return "";}
+    else {return "INVALID COMMAND >> " + " " + extractor.getCommander() + " "+
+                              "\nType 'help' display list of valid commands";} return "";
+    }
 }

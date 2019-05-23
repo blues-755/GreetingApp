@@ -10,11 +10,7 @@ public class CommandExtractor {
     this.commander = command.trim().split(" ");
   }
   public String getCommander() {
-     if (commander.length == 3){
        return commander[0];
-     }else {
-       return commander[0];
-     }
   }
   public boolean hasName() {
        return !getUsername().isEmpty();

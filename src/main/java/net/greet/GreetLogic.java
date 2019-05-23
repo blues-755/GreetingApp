@@ -61,7 +61,6 @@ public class GreetLogic implements GreetInterface {
     return 0;
   }
   public void exit(){
-    System.out.println("Goodbye...!!");
     System.exit(0);
   }
 }
