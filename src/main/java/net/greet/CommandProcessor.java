@@ -38,7 +38,7 @@ public class CommandProcessor {
     else if ("counter".equalsIgnoreCase(extractor.getCommander()) && extractor.hasName()) {
       return  extractor.getUsername() + " counted  " + put.counterName(extractor.getUsername()) + " time(s)"; }
 
-    //COUNTER FOR ALL USER NAMES IN THE SYSTEM
+    //COUNTER FOR ALL USER NAMES IN THE SYSTEM DATABASE
     else if ("counter".equalsIgnoreCase(extractor.getCommander())) { return put.counter() + " user(s) in the list";}
 
       //CLEAR ALL USERS
